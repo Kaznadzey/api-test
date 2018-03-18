@@ -10,6 +10,6 @@ class ApiActionAuthor extends AbstractApiAction
 {
     protected function runAction(ApiActionRequestDto $actionRequestDto)
     {
-        // TODO: Implement runAction() method.
+        echo 1;die();
     }
 }

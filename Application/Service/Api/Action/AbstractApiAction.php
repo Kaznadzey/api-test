@@ -63,8 +63,6 @@ abstract class AbstractApiAction
     /**
      * @param string $message
      * @param array  $data
-     *
-     * @return array
      */
     protected function sentFailResponse(string $message, array $data = [])
     {

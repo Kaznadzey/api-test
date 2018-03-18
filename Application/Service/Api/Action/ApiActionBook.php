@@ -10,6 +10,6 @@ class ApiActionBook extends AbstractApiAction
 {
     protected function runAction(ApiActionRequestDto $actionRequestDto)
     {
-        // TODO: Implement runAction() method.
+        echo 2;die();
     }
 }
