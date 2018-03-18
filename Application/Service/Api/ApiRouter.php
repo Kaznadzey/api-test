@@ -6,6 +6,7 @@ namespace Application\Service\Api;
 use Application\Service\Api\Action\AbstractApiAction;
 use Application\Service\Api\Action\ApiActionAuthor;
 use Application\Service\Api\Action\ApiActionBook;
+use Application\Service\Api\Action\ApiActionNotFound;
 use Application\Service\Api\Action\ApiActionRequestDto;
 
 /**
@@ -47,7 +48,7 @@ class ApiRouter
                 return new ApiActionAuthor();
                 break;
             default:
-                throw new \DomainException('Your request is invalid!');
+                return new ApiActionNotFound();
         }
     }
 

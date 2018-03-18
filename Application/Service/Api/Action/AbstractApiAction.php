@@ -22,8 +22,6 @@ abstract class AbstractApiAction
 
     /**
      * @param ApiActionRequestDto $actionRequestDto
-     *
-     * @return mixed
      */
     abstract protected function runAction(ApiActionRequestDto $actionRequestDto);
 
